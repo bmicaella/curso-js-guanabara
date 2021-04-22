@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de multas</title>
+
+    <style>
+        #t_speed {
+            width: 2rem
+        }
+    </style>
+</head>
+<body>
+    <h1>SISTEMA DE MULTAS</h1>
+
+    <div id="input-multa">
+        <span>Digite a velocidade:</span>
+        <input type="text" name="t_speed" id="t_speed">
+        <input type="button" value="OK" onclick="multa()">
+    </div>
+
+    <div id="res"></div>
+    <script>
+        function multa() {
+            var speed = Number((document.getElementById('t_speed')).value)
+            var res = document.getElementById('res')
+
+            if (speed > 60) {
+                res.innerText = 'Você está acima do limite e foi multado.'
+            }
+        }
+    </script>
+</body>
+</html>

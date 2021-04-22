@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>lets analyze!</h1>
+    </header>
+    
+    <section id="container">
+       <div>
+           <p>
+               Please insert a number (0 to 100): 
+               <input type="number" name="txtNumber" id="txtNumber" max="100" min="0">
+               <input type="button" value="ADD" id="botao" onclick="adicionar()">
+            </p>
+
+            <select name="analyze" id="valores" size="10">
+            </select>
+
+            <p>
+                <button type="button" id="analisar" onclick="analise()">ANALISAR</button>
+            </p>
+            <p>
+                <input type="button" value="END" id="fim" onclick="limpar()">
+            </p>
+       </div>
+
+       <div id="result">
+       </div>
+    </section>
+
+    <footer id="foot"> @bmicaella</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

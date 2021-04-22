@@ -1,0 +1,12 @@
+body {
+    background: linear-gradient(45deg,#7113dd, #8f39c0);
+    font-family: Roboto, sans-serif;
+    color: white;
+    display: grid;
+}
+
+h1 {
+    color: white;
+    justify-content: center;
+    align-items: center;
+}

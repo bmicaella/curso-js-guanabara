@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #area {
+            color: white;
+            background-color: cadetblue;
+            width: 200px;
+            height: 200px;
+
+            font: bold 21px sans-serif;
+            line-height: 200px;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clickk()" onmouseover="inn()" onmouseout="out()">
+        Interaja!
+    </div>
+
+    <script>
+        var a = document.getElementById('area')
+
+        function clickk() {
+            a.innerText = 'Clicasteee'
+            a.style.backgroundColor = 'red'
+        }
+
+        function inn() {
+            a.innerText = 'Oi o.o'
+        }
+
+        function out() {
+           a.innerText = 'Interaja!'
+           a.style.backgroundColor = 'cadetblue'
+        }
+    </script>
+</body>
+</html>

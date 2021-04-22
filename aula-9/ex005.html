@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first steps with DOM!!!</title>
+
+    <style>
+        body {
+            background: linear-gradient( 45deg, rgb(183, 0, 255), rgb(137, 6, 224));
+            color: white;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>starting DOM studies</h1>
+    <p>here goes the result!</p>
+    <p>learning to use <strong>DOM</strong> in javascript!</p>
+    <h2>YAYYYY!</h2>
+    <div id="msg">click me!!!</div>
+
+    <script>
+
+        var division = document.getElementById('msg')
+        var corpo = document.body
+        var paragraph = document.getElementsByTagName('p')[0] /*acessando um elemento pela tag.
+        o [] indica qual p o documento deve pegar. 0 = primeira tag que aparecer daquele tipo,
+        1 = segunda tag... etc */
+        var d = document.querySelector('div#msg')
+        //se div tivesse com classe e nao id, no query ficaria div.msg
+
+        d.style.backgroundColor = 'gold'
+        /* document.write(`its written on the page: ${paragraph.innerText}`) 
+
+        division.style.backgroundColor = 'white'
+        corpo.style.color = 'black'
+        paragraph.style.fontStyle = 'italic'/*aqui a gente acessa as config
+        de um objeto*/
+
+        /*a diferença pra puxar innerText pra puxar innerHTML é que o 1st vai puxar apenas o texto
+        e o segundo vai puxar texto E as configurações*/
+        // jeito mais longo e completo de fazer as config:
+        //window.document.getElementById('msg').innerText = 'Helloooo! :)'
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificador de idade</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>verificador de idade</h1>
+    </header>
+    
+    <section id="container">
+        <div>
+            <p>
+                ano de nascimento: 
+                <input type="number" name="year" id="year" min="0" max="2021">       
+            </p>
+ 
+            <p>
+                sexo: 
+                    <input type="radio" name="sex" id="fem" checked>
+                        <label for="fem">feminino</label> 
+                    <input type="radio" name="sex" id="mas">
+                        <label for="mas">masculino</label>
+            </p>
+
+            
+            <button onclick="idade()">verificar</button>
+                
+            
+            
+        </div>
+        
+        <div id="res">
+          preencha os dados acima para ver o resultado
+        </div>
+        
+    </section>
+
+    <footer id="foot"> @bmicaella</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

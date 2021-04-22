@@ -1,0 +1,40 @@
+body {
+    font: normal 16pt sans-serif;
+    color: #FFFFFF;
+    /*
+    background: linear-gradient(270deg ,#1316d6, #8a0c96) fixed;
+    */
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background: #FFFFFF;
+
+    padding: 15px;
+    margin: auto;
+    border-radius: 0.7rem;
+
+    text-align: center;
+
+    /*
+    width: 500px;
+    height: 200px;
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.425);
+    */
+}
+
+div {
+    color: #000000
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 1rem;
+
+    opacity: 0.5;
+}

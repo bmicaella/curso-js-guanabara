@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somar</title>
+
+    <style>
+        body {
+            font: normal 18pt sans-serif;
+            
+            background: linear-gradient(60deg , #6dbe03,#d8115d 100%) fixed;
+            color: #ffffff;
+        }
+
+        input {
+            height: 1.3rem;
+            width: 1.5rem;
+
+            font: normal 18pt sans-serif;
+            
+            justify-content: center;
+            margin: 0.6rem;
+        }
+
+        #container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            padding: none;
+        }
+        #sum {
+            height: 1.69rem;
+            width: 2rem;
+
+            color: white;
+            background-color: black;
+            border: none;
+
+            margin: 0.6rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Somar</h2>
+
+    <div id="container">
+
+        <input type="text" name="num01" id="num01"> +
+        <input type="text" name="num02" id="num02"> <!-- coloquei o type text pq como number fica com aquela setinha
+        pra ir aumentando o valor e eu nao curto. lá embaixo a função ja faz a conversão de qlqr forma, então acho q
+        não tem problema -->
+        <input type="button" value="=" id="sum" onclick="somar()">
+        <span id="result"> </span>
+
+    </div>
+    
+
+    <script>
+        
+
+        function somar() {
+            var tn1 = document.getElementById("num01")
+            var tn2 = document.getElementById("num02")
+            var res = document.getElementById("result")
+
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+
+            var re = n1 + n2
+
+            res.innerHTML = `${re}`
+            
+        }
+    </script>
+    
+</body>
+</html>

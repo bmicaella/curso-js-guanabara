@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brasileiridade</title>
+
+    <style></style>
+</head>
+<body>
+    <h1>brasileiridade</h1>
+
+    <div id="br">
+        <input type="text" name="nacio" id="nacio">
+        <input type="button" id="nacional" value="OK">
+    </div>
+    <p id="res"></p>
+
+    <script>
+        var a = document.querySelector('#nacional')
+
+        a.addEventListener('click', nacionalidade)
+
+        function nacionalidade() {
+            var naciona = document.getElementById('nacio').value
+            var res = document.querySelector('#res')
+
+            if (naciona == 'Brasil' || naciona == 'BR' || naciona == 'brasil' || naciona == 'br') {
+                res.innerText = 'Brasileiro!'
+            }
+            else {
+                res.innerText = 'Estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>
